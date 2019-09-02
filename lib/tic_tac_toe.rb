@@ -1,5 +1,9 @@
 class TicTacToe
 
+  def initialize (game)
+    @tic_tac_toe = game
+  end 
+
   WIN_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
