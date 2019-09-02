@@ -11,9 +11,9 @@ class TicTacToe
     [6, 4, 2]
   ]
 
-    def initialize
-      @board = Array.new(9, " ")
-    end
+  def initialize(board = nil)
+  @board = board || Array.new(9, " ")
+  end
 
     def display_board
       puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
@@ -126,7 +126,7 @@ class TicTacToe
       end
     end
 
-    def play 
+    def play
       until over? == true
         turn
       end
